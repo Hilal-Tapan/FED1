@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Hilal Tapan
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Blauw
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Resonsive
  
 </details>
 
@@ -108,11 +108,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Menno          | Laiba             | Hilal        |      
-  | Vraag over grid| Vraag over hoeveel| ---          |   
-  | dit bespreken  | css bestanden     | Vraag over    |  
-  |                | en vraag over font| breakdownschets | 
-  | ...            | ...               | ...          |
+  - menno: vraag over grid
+  - Laiba: vraag over hoeveel css bestanden en vraag over font
+  - hilal: vraag over breakdownschets.
+  - wessel
 
 
   ### Verslag van meeting

@@ -110,17 +110,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - menno: vraag over grid
   - Laiba: vraag over hoeveel css bestanden en vraag over font
-  - hilal: vraag over breakdownschets.
-  - wessel
+  - hilal: vraag over breakdownschets en hamburger menu spannetjes
+  - wessel: vraag over wanneer je grid gebruikt en wanneer flexbox
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Je breakdown schets klopt. In de hoofdpagina is dat stukje geen aside maar een section, dus had het goed gedaan.
+  - Die drie zinnen bovenaan bij de css heb ik uitleg over gehad, deze snapte ik niet wat ze deden. Nu wel en heb het in comments erbij gezet in de css.
+  - Hamburger menu in een nav zetten (met spannetjes?)
+  - Elke section moet een h2 hebben
+  - Alsje hoofdletters wil moetje in css text-transform:uppercase;
 
 </details>
 

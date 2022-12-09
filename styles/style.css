@@ -34,28 +34,30 @@ summary {
 /****************/
 /* JOUW STYLING */
 /****************/
-@keyframes movingText {
-	0% {
-		transform: translateX(100%);
-	}
-
-	100% {
-		transform: translateX(-120%);
-	}
-}
-
 body {
-	overflow: hidden;
+	overflow-x: hidden;
 	margin: 0;
 }
 
 header {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 3em 7.5em;
+	grid-template-rows: 3em 7em;
 }
 
 /* bruine moving tekst vanaf hier */
+@keyframes movingText {
+	0% {
+		transform: translateX(100%);
+	}
+	50% {
+		transform: translateX(-40%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
 header > ul {
 	display: flex;
 	grid-column-start: 1;
@@ -73,7 +75,7 @@ header ul li p {
 	padding: .6em;
 	color: var(--color-background);
 	font-size: .9em;
-	animation: movingText 5s;
+	animation: movingText 8s;
 	animation-iteration-count: infinite;
 
 	word-spacing: .2em;
@@ -81,23 +83,25 @@ header ul li p {
 }
 
 /* Header logo, zoekbalk en winkelmandje */
-header img {
-	height: 90%;
-	object-fit: contain;
+header > a img {
+	height: 70%;
+	width: auto;
+	margin-top: 1em;
+	/* object-fit: contain; */
 }
+
 
 header button {
 	background-color: var(--color-background);
 	border: none;
 	width: 2em;
-
 }
 
 header div {
 	display: flex;
 	justify-content: end;
 	gap: 1em;
-	margin-right: 3em;
+	margin-right: 1em;
 }
 
 header div a {
@@ -121,28 +125,57 @@ header > button {
 
 header nav {
 	position: fixed;
-	top: 8em;
+	top: 10em;
 	left: 0;
 	bottom: 0;
-	right: 0;
+	right: 2em;
 	background-color: var(--color-background);
 	z-index: 1000;
 	transform: translateX(-100%);
 	transition: .5s;
+	border-top: .1em solid lightgray;
+
 }
 
 header nav.open {
 	transform: translateX(0%);
 }
 
+header nav li {
+	background-color: white;
+	margin-left: 3em;
+}
+
+header nav li:nth-of-type(1) {
+	margin-top: 3em;
+}
+
+header nav li a {
+	color:black;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
 /* main */
+/* section 1 */
 section:nth-of-type(1) {
 	text-align: center;
 }
 
 section:nth-of-type(1) img {
-	width: 100%;
+	width: 100vw;
+	height: auto;
 }
+
+@media (max-width: 500px) {
+	section:nth-of-type(1) img {
+	  width: 170vw;
+	  height: auto;
+	  position:relative;
+	  left: -11em;
+	/* Hoe maak ik dit mooier responsive? */
+	}
+  }
 
 section:nth-of-type(1) a {
 	position: relative;
@@ -155,6 +188,55 @@ section:nth-of-type(1) a {
 	padding-left: 2em;
 	padding-right: 2em;
 	text-decoration: none;
+}
+
+/* section 2 */
+section:nth-of-type(2){
+	background-color:#f3f2e9;
+	margin-left:1em;
+	margin-right:1em;
+	margin-top: 1em;
+	display: grid;
+	grid-template-rows: 38em 3em 7em 11em 4em;
+}
+
+section:nth-of-type(2) img {
+	grid-row-start: 1;
+}
+
+section:nth-of-type(2) h1 {
+	grid-row-start: 2;
+	margin-left:.8em;
+
+}
+
+section:nth-of-type(2) p:nth-of-type(1) {
+	grid-row-start: 3;
+	font-size: 1.3em;
+	margin: .5em;
+	margin-left:.8em;
+
+}
+
+section:nth-of-type(2) p:nth-of-type(2) {
+	grid-row-start: 4;
+	font-size: 1.3em;
+	margin: .5em;
+	margin-left:.8em;
+}
+
+section:nth-of-type(2) a {
+	grid-row-start: 5;
+	font-size: 1.3em;
+    color:black;
+	border: .1em solid black;
+	border-radius: .4em;
+	width: 10em;
+	height: 1.8em;
+	margin-left:.8em;
+	text-align: center;
+	text-decoration: none;
+	padding-top:.2em;
 }
 
 

@@ -135,17 +135,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik vind dat het goed gaat! Ik heb een grote sprong in de css gemaakt en dat komt omdat ik er veel plezier in heb en vind daardoor het huiswerk zelfs leuk. Ik ben deze week aan de slag geweest met grid, ik wou graag met grid werken omdat ik dit nog nooit had gedaan. Hierin wil ik mezelf uitdagen en merk dat ik grid nu al zoveel beter snap. Het ging 1 keer fout deze week maar dat kwam omdat ik de code op de verkeerde selector had gezet verder klopte het gewoon :)
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Hilal:
+  Vraag 1: Doe ik de fontface goed op deze manier? 
+  Vraag 2: Vind een carousel starten lastig, vooral als je bij het swipen de nummers ziet veranderen zoals op mijn site. Hoe kan ik dit het beste aanpakken en heb ik hier javascript voor nodig?
+
+  Laiba:
+  Menno:
+  Wessel:
+  
 
 
   ### Verslag van meeting

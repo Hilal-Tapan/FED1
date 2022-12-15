@@ -145,6 +145,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Vraag 1: Doe ik de fontface goed op deze manier? 
   Vraag 2: Vind een carousel starten lastig, vooral als je bij het swipen de nummers ziet veranderen zoals op mijn site. Hoe kan ik dit het beste aanpakken en heb ik hier javascript voor nodig?
   Vraag 3: Een stukje van me hamburger menu gaat mee bij het scrollen, waardoor komt dit?
+  Vraag 4: Waarom als ik me hamburger responsive maak gaan die list items niet mee?
 
   Laiba:
   vraag 1 (formulieren): Formulieren, hoe moet je erin verwerken? Mag ik het verstoppen? (Surface plane)

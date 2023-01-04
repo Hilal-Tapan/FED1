@@ -28,6 +28,9 @@ summary {
 	--header-color:#692c09;
 	--color-lilac: #C8A2C8;
 	--nav-border: lightgray;
+	--header-text:#ffece1;
+	--footer-color:#f1eeeb;
+	--links:green;
 }
 
 @font-face {
@@ -87,7 +90,7 @@ header ul li {
 header ul li p {
 	width: 100%;
 	margin: 0;
-	color: var(--color-background);
+	color: var(--header-text);
 	font-size: .8em;
 	animation: movingText 8s;
 	animation-iteration-count: infinite;
@@ -208,17 +211,17 @@ h1 {
 }
 
 /* section 1 */
-section:nth-of-type(1) {
+main section:nth-of-type(1) {
 	text-align: center;
 }
 
-section:nth-of-type(1) h2 {
+main section:nth-of-type(1) h2 {
 	visibility: hidden;
 	margin: none;
 	position: absolute;
 }
 
-section:nth-of-type(1) img {
+main section:nth-of-type(1) img {
 	width: 100%;
 	height: 33.75em;
 	object-fit: cover;
@@ -226,12 +229,12 @@ section:nth-of-type(1) img {
 }
 
 @media (min-width: 64em) {
-	section:nth-of-type(1) img {
+	main section:nth-of-type(1) img {
 		height: 45em;
 	}
   }
 
-section:nth-of-type(1) a {
+main section:nth-of-type(1) a {
 	position: relative;
 	bottom: 1em;
 	background-color: var(--color-lilac);
@@ -247,12 +250,12 @@ section:nth-of-type(1) a {
 
 /* section 2 */
 section:nth-of-type(2){
-	background-color:#f3f2e9;
+	background-color:var(--footer-color);
 	margin-left:1em;
 	margin-right:1em;
 	margin-top: 1em;
 	display: grid;
-	grid-template-rows: 40em 3em 7em 11em 4em;
+	grid-template-rows: 37em 3em 7em 14em 4em;
 }
 
 section:nth-of-type(2) img {
@@ -273,6 +276,7 @@ section:nth-of-type(2) p {
 	margin-left:.8em;
 	font-family: Karla-Regular;
 	font-size: 1.2em;
+	line-height: 1.4em;
 }
 
 section:nth-of-type(2) p:nth-of-type(1) {
@@ -342,12 +346,16 @@ section:nth-of-type(2) a:hover {
 
  section:nth-of-type(3) ul a h3 {
 	 font-size: 1em;
+	 font-family: Karla-Regular;
  }
 
  section:nth-of-type(3) ul a h4 {
 	font-size: .8em;
 	order:-80;
 	margin: .4em;
+	font-family: Karla-Regular;
+	margin-bottom: 1em;
+
  }
 
  section:nth-of-type(3) ul a h4:hover {
@@ -399,6 +407,10 @@ section:nth-of-type(4) button {
 	border:none;
 }
 
+section:nth-of-type(4) button:hover {
+	opacity: 0.7;
+}
+
 /* Carousel */
 section:nth-of-type(5) {
 	margin-left: .8em;
@@ -436,7 +448,7 @@ section:nth-of-type(5) li {
 }
 
 section:nth-of-type(5) li h3 {
-	background-color: #f1eeeb;
+	background-color:var(--footer-color);
 	z-index: 1000;
 	width: 100%;
 	height: 3em;
@@ -453,7 +465,105 @@ section:nth-of-type(5) li p {
 	letter-spacing: 1em;
 }
 
- /* Vind een carousel starten lastig, vooral als je bij het swipen de nummers ziet veranderen. Hoe kan ik dit het beste aanpakken? */
+
+section:nth-of-type(6) {
+	margin: 4em 1em 1em 1em;
+}
+
+section:nth-of-type(6) h2 {
+	font-family: GrouchBT;
+	color: var(--header-color);
+	text-align: center;
+	font-size:2em;
+	margin-bottom: .5em;
+}
+
+section:nth-of-type(6) p {
+	font-family: Karla-Regular;
+	text-align: center;
+	line-height: 1.4em;
+}
+
+section:nth-of-type(6) a {
+	color: var(--links);
+}
+
+
+footer{
+	background-color:var(--footer-color);
+}
+
+footer section:nth-of-type(1) {
+	margin-top: 3em;
+	padding: 3em 2em 0em 2em;
+	border-bottom: grey solid .1em;
+}
+
+footer section:nth-of-type(1) ul li {
+	margin-bottom: 3em;
+}
+
+footer section:nth-of-type(1) ul li h2 {
+	font-family: Karla-Bold;
+	text-transform: uppercase;
+	font-size: 1em;
+	margin-bottom: 1em;
+}
+
+footer section:nth-of-type(1) ul li h3 {
+	font-family: Karla-Bold;
+	text-transform: uppercase;
+	font-size: 1em;
+	margin-bottom: 1em;
+}
+
+footer section:nth-of-type(1) ul li p {
+	font-family: Karla-Regular;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+footer section:nth-of-type(1) ul li a {
+	color: grey;
+	font-family: Karla-Regular;
+}
+
+footer section:nth-of-type(1) ul li:nth-of-type(3) h3{
+	margin-bottom: 1.5em;
+}
+
+footer section:nth-of-type(1) ul li:nth-of-type(3) a {
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+	margin-bottom: 1em;
+	font-size: .9em;
+}
+
+footer section:nth-of-type(1) input {
+	width: 14em;
+    height: 3em;
+	padding-left: 1em;
+	font-family: Karla-Regular;
+	font-size: 1em;
+}
+
+footer section:nth-of-type(1) button {
+	width: 10em;
+    height: 3.2em;
+	background-color: var(--header-color) ;
+	color: var(--color-background);
+	border:none;
+	text-transform: uppercase;
+	font-family: Karla-Bold;
+	font-size: 1em;
+}
+
+footer section:nth-of-type(1) button:hover {
+	opacity: 0.7;
+}
+
+
 
  
  

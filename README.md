@@ -164,10 +164,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Fontface doe je 3 verschillende aanmaken ipv alles op eentje.
+  - Die carousel maak je met javascript
+  - Height 100% width 90%, overflow hidden niet vergeten bij je header -> gedaan maar probleem is niet opgelost..
+  - Omdat je die items opnieuw moet aanmaken in die header en dan display none geven en dan met mediaqueries naar zichtbaar maken.
 
 </details>
 

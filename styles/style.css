@@ -31,9 +31,18 @@ summary {
 }
 
 @font-face {
-	font-family: "Karla-Regular" "Karla-Bold" "GrouchBT";
-	src: url(/fonts/Karla-Regular.ttf) url(/fonts/Karla-Bold.ttf) url(/fonts/GrouchBT.ttf);
+	font-family: "Karla-Regular";
+	src: url(/fonts/Karla-Regular.ttf);
+}
 
+@font-face {
+	font-family: "Karla-Bold";
+	src: url(/fonts/Karla-Bold.ttf);
+}
+
+@font-face {
+	font-family: "GrouchBT";
+	src: url(/fonts/GrouchBT.ttf);
 }
 
 /****************/
@@ -48,6 +57,7 @@ header {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 3em 6em;
+	overflow:hidden;
 }
 
 /* bruine moving tekst vanaf hier */
@@ -81,9 +91,9 @@ header ul li p {
 	font-size: .8em;
 	animation: movingText 8s;
 	animation-iteration-count: infinite;
-
 	word-spacing: .2em;
 	white-space: nowrap;
+	font-family: Karla-Regular;
 }
 
 /* Header logo, zoekbalk en winkelmandje */
@@ -145,10 +155,12 @@ header > button {
 }
 
 header nav {
-	position: fixed;
+	height: 100%;
+	width: 88%;
+	position: absolute; 
 	top: 9em;
 	left: 0;
-	bottom: 0;
+	/* bottom: 0; */
 	right: 2em;
 	background-color: var(--color-background);
 	z-index: 1000;
@@ -181,6 +193,8 @@ header nav li a {
 	font-size: 1em;
 	text-decoration: none;
 	text-transform: uppercase;
+	font-family: Karla-Bold;
+
 }
 
 /* main */
@@ -188,6 +202,9 @@ h1 {
 	visibility: hidden;
 	margin:none;
 	position: absolute;
+	top:0;
+	left:-999999999em;
+	transform: scale(0.01);
 }
 
 /* section 1 */
@@ -225,6 +242,7 @@ section:nth-of-type(1) a {
 	padding-left: 2em;
 	padding-right: 2em;
 	text-decoration: none;
+	font-family: Karla-Bold;
 }
 
 /* section 2 */
@@ -234,7 +252,7 @@ section:nth-of-type(2){
 	margin-right:1em;
 	margin-top: 1em;
 	display: grid;
-	grid-template-rows: 38em 3em 7em 11em 4em;
+	grid-template-rows: 40em 3em 7em 11em 4em;
 }
 
 section:nth-of-type(2) img {
@@ -243,23 +261,26 @@ section:nth-of-type(2) img {
 
 section:nth-of-type(2) h2 {
 	grid-row-start: 2;
-	margin-left:.8em;
+	margin-left:.5em;
 	text-transform: uppercase;
+	font-family: GrouchBT;
+	font-size: 2em;
+}
 
+section:nth-of-type(2) p {
+	font-size: 1.3em;
+	margin: .5em;
+	margin-left:.8em;
+	font-family: Karla-Regular;
+	font-size: 1.2em;
 }
 
 section:nth-of-type(2) p:nth-of-type(1) {
 	grid-row-start: 3;
-	font-size: 1.3em;
-	margin: .5em;
-	margin-left:.8em;
 }
 
 section:nth-of-type(2) p:nth-of-type(2) {
 	grid-row-start: 4;
-	font-size: 1.3em;
-	margin: .5em;
-	margin-left:.8em;
 }
 
 section:nth-of-type(2) a {
@@ -274,6 +295,8 @@ section:nth-of-type(2) a {
 	text-align: center;
 	text-decoration: none;
 	padding-top:.2em;
+	font-family: Karla-Regular;
+
 }
 
 section:nth-of-type(2) a:hover {
@@ -290,15 +313,18 @@ section:nth-of-type(2) a:hover {
  section:nth-of-type(3) h2 {
 	grid-row-start: 1;
 	grid-column-start: 1;
-	margin-bottom: 1em;
-	margin-top: 1em;
-	font-size: 1.5em;
+	margin-bottom: 1.3em;
+	margin-top: 1.5em;
+	font-size: 1.3em;
+	font-family: Karla-Regular;
+	text-transform: uppercase;
+
  }
  
  section:nth-of-type(3) ul {
 	 display: grid;
 	 grid-auto-rows: 20em;
-	 grid-template-columns: 14em 14em;
+	 grid-template-columns: 14.3em 14.3em;
 	 gap: .5em;
 	 grid-row-gap:3em;
  }
@@ -327,6 +353,53 @@ section:nth-of-type(2) a:hover {
  section:nth-of-type(3) ul a h4:hover {
 	 text-decoration: underline var(--color-text);
  }
+
+ /* Nieuwsletter */
+ section:nth-of-type(4){
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 5em;
+}
+
+section:nth-of-type(4) h2 {
+	font-size: 1.8em;
+	font-family: Karla-Regular;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	text-align: center;
+	line-height: 1.3em;
+	margin-bottom: 1em;
+
+}
+
+section:nth-of-type(4) p {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	margin-bottom: 1.3em;
+	text-align: center;
+	font-size: 1em;
+	font-family: Karla-Regular;
+	line-height: 1.3em;
+}
+
+section:nth-of-type(4) input {
+	width: 14em;
+    height: 3em;
+	margin-left: 2.2em;
+	padding-left: 1em;
+	font-family: Karla-Regular;
+	font-size: 1em;
+}
+
+section:nth-of-type(4) button {
+	width: 10em;
+    height: 3.7em;
+	background-color: var(--header-color) ;
+	color: var(--color-background);
+	border:none;
+}
+
+ /* Vind een carousel starten lastig, vooral als je bij het swipen de nummers ziet veranderen. Hoe kan ik dit het beste aanpakken? */
 
  
  

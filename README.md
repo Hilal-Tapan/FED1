@@ -82,17 +82,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschetsen.jpg" width="375px" alt="breakdown van de eerste pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdownschetsen2.jpg" width="375px" alt="Breakdown van tweede pagina">
 
 </details>
-
-
 
 
 
@@ -172,9 +166,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 </details>
 
 
-
-
-
 ## Toegankelijkheidstest 2/2 (week 4)
 
 <details>
@@ -218,18 +209,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  In de vakantie vond ik het een beetje lastig om met school aan de slag te gaan. Toch heb ik wat dingetjes gedaan. Ik heb de carousel gemaakt waar ik zo tegen op keek en het was veel makkelijker dan verwacht. Omdat dit zo vlot ging heb ik de rest van pagina 1 afgemaakt. Het moet nog wel responsive gemaakt worden.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Hilal:
+  1. Is er een mogenlijkheid me pagina te locken wanneer het hamburger menu openstaat zodat mensen niet naar beneden kunnen scrollen?
+  2. Hoe maak je een extra pagina met een nieuw css bestand?
+  3. Hoe doe ik die kleine icoontjes uit de footer op me site. Zij hebben een soort code gebruikt hiervoor en geen img.
 
+  
+  Laiba:
+
+  Menno: 
+
+  Wessel:
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen

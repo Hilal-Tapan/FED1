@@ -31,6 +31,7 @@ summary {
 	--header-text:#ffece1;
 	--footer-color:#f1eeeb;
 	--links:green;
+	--footer-text:grey;
 }
 
 @font-face {
@@ -249,7 +250,7 @@ main section:nth-of-type(1) a {
 }
 
 /* section 2 */
-section:nth-of-type(2){
+main section:nth-of-type(2){
 	background-color:var(--footer-color);
 	margin-left:1em;
 	margin-right:1em;
@@ -258,11 +259,11 @@ section:nth-of-type(2){
 	grid-template-rows: 37em 3em 7em 14em 4em;
 }
 
-section:nth-of-type(2) img {
+main section:nth-of-type(2) img {
 	grid-row-start: 1;
 }
 
-section:nth-of-type(2) h2 {
+main section:nth-of-type(2) h2 {
 	grid-row-start: 2;
 	margin-left:.5em;
 	text-transform: uppercase;
@@ -270,7 +271,7 @@ section:nth-of-type(2) h2 {
 	font-size: 2em;
 }
 
-section:nth-of-type(2) p {
+main section:nth-of-type(2) p {
 	font-size: 1.3em;
 	margin: .5em;
 	margin-left:.8em;
@@ -279,15 +280,15 @@ section:nth-of-type(2) p {
 	line-height: 1.4em;
 }
 
-section:nth-of-type(2) p:nth-of-type(1) {
+main section:nth-of-type(2) p:nth-of-type(1) {
 	grid-row-start: 3;
 }
 
-section:nth-of-type(2) p:nth-of-type(2) {
+main section:nth-of-type(2) p:nth-of-type(2) {
 	grid-row-start: 4;
 }
 
-section:nth-of-type(2) a {
+main section:nth-of-type(2) a {
 	grid-row-start: 5;
 	font-size: 1.3em;
     color:var(--color-text);
@@ -303,7 +304,7 @@ section:nth-of-type(2) a {
 
 }
 
-section:nth-of-type(2) a:hover {
+main section:nth-of-type(2) a:hover {
 	background-color: var(--color-background);
 }
 
@@ -496,11 +497,11 @@ footer{
 footer section:nth-of-type(1) {
 	margin-top: 3em;
 	padding: 3em 2em 0em 2em;
-	border-bottom: grey solid .1em;
+	border-bottom: var(--nav-border) solid .1em;
 }
 
 footer section:nth-of-type(1) ul li {
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 }
 
 footer section:nth-of-type(1) ul li h2 {
@@ -524,7 +525,7 @@ footer section:nth-of-type(1) ul li p {
 }
 
 footer section:nth-of-type(1) ul li a {
-	color: grey;
+	color: var(--footer-text);
 	font-family: Karla-Regular;
 }
 
@@ -561,6 +562,35 @@ footer section:nth-of-type(1) button {
 
 footer section:nth-of-type(1) button:hover {
 	opacity: 0.7;
+}
+
+
+
+footer section:nth-of-type(2) h2{
+	margin-top: 2em;
+	color: var(--footer-text);
+	margin-left: 30%;
+	font-size: .8em;
+	font-family: Karla-Regular;
+}
+
+footer section:nth-of-type(2) button {
+	width: 15em;
+	height: 3em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:var(--footer-text);
+	margin-left: 30%;
+	margin-top: 1em;
+}
+
+footer section:nth-of-type(2) p {
+	color: var(--footer-text);
+	margin-top: 1em;
+	text-align: center;
+	font-size: .8em;
+	font-family: Karla-Regular;
 }
 
 

@@ -583,6 +583,12 @@ footer section:nth-of-type(2) button {
 	color:var(--footer-text);
 	margin-left: 30%;
 	margin-top: 1em;
+	background: none;
+	border: .1em solid var(--footer-text);
+}
+
+footer section:nth-of-type(2) button:hover {
+	border: .2em solid var(--footer-text);
 }
 
 footer section:nth-of-type(2) p {

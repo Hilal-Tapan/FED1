@@ -49,6 +49,21 @@ summary {
 	src: url(/fonts/GrouchBT.ttf);
 }
 
+/* Keyframes */
+/* bruine moving tekst vanaf hier */
+@keyframes movingText {
+	0% {
+		transform: translateX(100%);
+	}
+	50% {
+		transform: translateX(-40%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -62,19 +77,6 @@ header {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 3em 6em;
 	overflow:hidden;
-}
-
-/* bruine moving tekst vanaf hier */
-@keyframes movingText {
-	0% {
-		transform: translateX(100%);
-	}
-	50% {
-		transform: translateX(-40%);
-	}
-	100% {
-		transform: translateX(-100%);
-	}
 }
 
 header > ul {
@@ -107,7 +109,6 @@ header > a img {
 	/* object-fit: contain; */
 }
 
-
 header button {
 	background-color: var(--color-background);
 	border: none;
@@ -135,19 +136,6 @@ header > div a img {
 	height: 2em;
 }
 
-@media (min-width:45em) {
-	header > button {
-		display: none;
-	}
-	nav {
-		position:static;
-		transform:none;
-	}
-
-	nav ul {
-		display: flex;
-	}
-}
 /* Hamburger menu */
 header > button {
 	background-color: var(--color-background);
@@ -181,15 +169,19 @@ header nav.open {
 	transform: translateX(0%);
 }
 
-header nav li {
+header nav ul:nth-of-type(1) li {
 	background-color: var(--color-background);
 	margin-left: 3em;
 	margin-bottom: 1em;
 	margin-top: 1em;
 }
 
-header nav ul {
+header nav ul:nth-of-type(1) {
 	margin-top: 4em;
+}
+
+header nav ul:nth-of-type(2){
+	display: none;
 }
 
 header nav li a {
@@ -228,12 +220,6 @@ main section:nth-of-type(1) img {
 	object-fit: cover;
 	object-position:  50% 10%;
 }
-
-@media (min-width: 64em) {
-	main section:nth-of-type(1) img {
-		height: 45em;
-	}
-  }
 
 main section:nth-of-type(1) a {
 	position: relative;
@@ -310,9 +296,7 @@ main section:nth-of-type(2) a:hover {
 
 /* section 3 */
  section:nth-of-type(3){
-	margin-left: 1em;
-	margin-right: 1em;
-	margin-top: 1em;
+	margin: 1em 1em 1em 1em;
  }
 
  section:nth-of-type(3) h2 {
@@ -328,10 +312,11 @@ main section:nth-of-type(2) a:hover {
  
  section:nth-of-type(3) ul {
 	 display: grid;
-	 grid-auto-rows: 20em;
-	 grid-template-columns: 14.3em 14.3em;
-	 gap: .5em;
-	 grid-row-gap:3em;
+	 grid-auto-rows: 40vw;
+	 /* dit zorgt voor problemen */
+	 grid-template-columns: 45vw 45vw;
+	 gap: 1vw;
+	 grid-row-gap:30vw;
  }
 
  section:nth-of-type(3) ul a {
@@ -348,6 +333,7 @@ main section:nth-of-type(2) a:hover {
  section:nth-of-type(3) ul a h3 {
 	 font-size: 1em;
 	 font-family: Karla-Regular;
+	 margin-bottom: 2em;
  }
 
  section:nth-of-type(3) ul a h4 {
@@ -356,7 +342,6 @@ main section:nth-of-type(2) a:hover {
 	margin: .4em;
 	font-family: Karla-Regular;
 	margin-bottom: 1em;
-
  }
 
  section:nth-of-type(3) ul a h4:hover {
@@ -367,7 +352,7 @@ main section:nth-of-type(2) a:hover {
  section:nth-of-type(4){
 	margin-left: 1em;
 	margin-right: 1em;
-	margin-top: 5em;
+	margin-top: 10em;
 }
 
 section:nth-of-type(4) h2 {
@@ -378,6 +363,7 @@ section:nth-of-type(4) h2 {
 	text-align: center;
 	line-height: 1.3em;
 	margin-bottom: 1em;
+
 
 }
 
@@ -599,6 +585,112 @@ footer section:nth-of-type(2) p {
 	font-family: Karla-Regular;
 }
 
+
+
+
+/* mediaqueries */
+@media (min-width:50em) {
+
+	main section:nth-of-type(2){
+		grid-template-columns: 27em 27em;
+		grid-template-rows:6em 8em 12em 7.8em ;
+		margin-bottom: 5em;
+		padding-left: 10em;
+		/* die zijkanten wit lukt me niet, 
+		ze worden grijs en doen vervelend bij de letters*/
+	}
+
+	main section:nth-of-type(2) img {
+		grid-column-start: 1;
+		grid-row-start: 1;
+	}
+
+	main section:nth-of-type(2) h2 {
+		grid-column-start: 2;
+		grid-row-start: 1;
+		margin-top: 1.5em;
+	}
+
+	main section:nth-of-type(2) p {
+		grid-column-start: 2;
+	}
+
+	main section:nth-of-type(2) p:nth-of-type(1){ 
+		grid-row-start: 2;
+	}
+
+	main section:nth-of-type(2) p:nth-of-type(2){
+		grid-row-start: 3;
+	}
+
+	main section:nth-of-type(2) a {
+		grid-column-start: 2;
+		grid-row-start: 4;
+		margin-top: 2em;
+	}
+
+}
+
+@media (min-width:60em) {
+	header {
+		margin-bottom: 3em;
+	}
+
+	header > button {
+		display: none;
+	}
+
+	header > a {
+		grid-column-start: 2;
+		margin-left: 5em;
+	}
+
+	header > div {
+		grid-column-start: 3;
+		margin-right: 5em;
+	}
+
+	nav {
+		position:static;
+		transform:none;
+		background-color: none;
+	}
+
+	/* Lukt me nieeeeet, nav responsive maken van nav*/
+	/* nav ul {
+		display: flex;
+		position:absolute;
+		transform: translateX(100%);
+		text-align: center;
+		
+	} */
+
+	header nav ul:nth-of-type(2){
+		display: visible;
+		display: flex;
+		position:absolute;
+		transform: translateX(100%);
+		text-align: center;
+	}
+}
+
+@media (min-width: 64em) {
+	main section:nth-of-type(1) img {
+		height: 45em;
+	}
+
+	main section:nth-of-type(3) {
+		padding-left: 10%;
+		padding-right: 10%;
+		/* die img moeten groeien en die whitespace ernaast hetzelfde blijven */
+
+	}
+	main section:nth-of-type(3) ul {
+		grid-template-rows: 10em 8em;
+		grid-template-columns: 15em 15em 15em 15em;
+		gap: .5em;
+	}
+  }
 
 
  

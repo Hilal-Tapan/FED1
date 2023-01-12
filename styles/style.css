@@ -63,7 +63,6 @@ summary {
 	}
 }
 
-
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -147,13 +146,11 @@ header > button {
 }
 
 header nav {
-	/* height: 100%; */
 	width: 88%;
 	position: absolute; 
 	top: 9em;
 	left: 0;
 	bottom: 0;
-	/* right: 2em; */
 	background-color: var(--color-background);
 	z-index: 1000;
 	transform: translateX(-100%);
@@ -174,13 +171,7 @@ header nav ul {
 
 header nav ul:nth-of-type(1) li {
 	background-color: var(--color-background);
-	margin-bottom: 1em;
-
-	
-}
-
-header nav ul:nth-of-type(1) {
-	/* margin-top: 4em; */
+	margin-bottom: 1em;	
 }
 
 header nav li a {
@@ -189,9 +180,7 @@ header nav li a {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: Karla-Bold;
-
 }
-
 
 @media (min-width:60em) {
 	header > button {
@@ -239,7 +228,6 @@ header nav li a {
 
 	header nav ul li a {
 		font-size: .9em;
-
 	}
 }
 
@@ -278,9 +266,7 @@ main section:nth-of-type(1) a {
 	color: var(--color-background);
 	border: 0.15em solid var(--color-text);
 	border-radius: .5em;
-	padding: 0.4em;
-	padding-left: 2em;
-	padding-right: 2em;
+	padding: 0.4em 2em 0 2em;
 	text-decoration: none;
 	font-family: Karla-Bold;
 }
@@ -288,9 +274,7 @@ main section:nth-of-type(1) a {
 /* section 2 */
 main section:nth-of-type(2){
 	background-color:var(--footer-color);
-	margin-left:1em;
-	margin-right:1em;
-	margin-top: 1em;
+	margin: 1em 1em 0 1em;
 	display: grid;
 	/* Reminder: niet meer zoveel rows aanmaken hilal */
 	/* grid-template-rows: 37em 3em 7em 14em 4em; */
@@ -367,7 +351,6 @@ main section:nth-of-type(2) a:hover {
 
 	main section:nth-of-type(2) a {
 		grid-column-start: 2;
-		grid-row-start: 4;
 		margin:0;
 		padding-bottom: 2em;
 	}
@@ -393,12 +376,10 @@ main section:nth-of-type(2) a:hover {
  section:nth-of-type(3) h2 {
 	grid-row-start: 1;
 	grid-column-start: 1;
-	margin-bottom: 1.3em;
-	margin-top: 1.5em;
+	margin: 1.5em 0 1.3em 0;
 	font-size: 1.3em;
 	font-family: Karla-Regular;
 	text-transform: uppercase;
-
  }
  
  section:nth-of-type(3) ul {
@@ -443,44 +424,17 @@ main section:nth-of-type(2) a:hover {
 	margin: 2em 1em 1em 1em;
 }
 
-
-@media (min-width: 64em) {
-	main section:nth-of-type(1) img {
-		height: 45em;
-	}
-
-	main section:nth-of-type(3) {
-		padding-left: 10%;
-		padding-right: 10%;
-		/* die img moeten groeien en die whitespace ernaast hetzelfde blijven */
-
-	}
-	main section:nth-of-type(3) ul {
-		grid-auto-rows: 20vw;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		column-gap: .5em;
-		/* row-gap: none; */
-	}
-		section:nth-of-type(4){
-			margin-top: 10em;
-		}
-  }
-
 section:nth-of-type(4) h2 {
 	font-size: 1.8em;
 	font-family: Karla-Regular;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
+	padding: 0 1.5em 0 1.5em;
 	text-align: center;
 	line-height: 1.3em;
 	margin-bottom: 1em;
-
-
 }
 
 section:nth-of-type(4) p {
-	padding-left: 1.5em;
-	padding-right: 1.5em;
+	padding: 0 1.5em 0 1.5em;
 	margin-bottom: 1.3em;
 	text-align: center;
 	font-size: 1em;
@@ -497,7 +451,6 @@ section:nth-of-type(4) div {
 section:nth-of-type(4) input {
 	width: 14em;
     height: 3em;
-	/* margin-left: 30%; */
 	padding-left: 1em;
 	font-family: Karla-Regular;
 	font-size: 1em;  
@@ -515,6 +468,26 @@ section:nth-of-type(4) button {
 section:nth-of-type(4) button:hover {
 	opacity: 0.7;
 }
+
+@media (min-width: 64em) {
+	main section:nth-of-type(1) img {
+		height: 45em;
+	}
+
+	main section:nth-of-type(3) {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	main section:nth-of-type(3) ul {
+		grid-auto-rows: 20vw;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		column-gap: .5em;
+	}
+		section:nth-of-type(4){
+			margin-top: 10em;
+		}
+  }
 
 /* Carousel */
 section:nth-of-type(5) {
@@ -646,12 +619,19 @@ footer section:nth-of-type(1) ul li:nth-of-type(3) a {
 	font-size: .9em;
 }
 
+footer section:nth-of-type(1) li:nth-of-type(4) {
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
 footer section:nth-of-type(1) input {
-	width: 14em;
+	width: 60%;
     height: 3em;
 	padding-left: 1em;
 	font-family: Karla-Regular;
 	font-size: 1em;
+	border: none;
 }
 
 footer section:nth-of-type(1) button {

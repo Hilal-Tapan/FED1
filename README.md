@@ -230,11 +230,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Ik had me grid een beetje verkeerd gedaan oeps. Ik had overal de rows gedefinieerd en dit hoefde helemaal niet. Ik ben er nu achter dat het veel makkelijker is zonder. Dus heb veel geleerd vandaag bij de tussenmeting. Me nav is eindelijk ook responsive en was een makkelijkere manier voor. Ik ben blij want vrijwel al me vragen zijn beantwoord :)
 
 </details>
 

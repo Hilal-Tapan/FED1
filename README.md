@@ -217,7 +217,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Hilal:
   1. Me img moeten groeien bij responsive, vind het lastig dit te combineren met grid.
   2. Responsive maken van de nav lukt me niet. heb gedaan wat jeffrey vorige x zei maar werkt niet.
-  3. Me padding doet apart bij section 2. Het word grijs ipv wit.
+  3. Me padding doet apart bij section 2. Het word grijs ipv wit. Ook vind ik section 2 lasting met responsiveness.
   4. Hoe doe ik die kleine icoontjes uit de footer op me site. Zij hebben een soort code gebruikt hiervoor en geen img.
   5. Bij responsive van die kleine afbeeldingen heb ik vw gebruikt om die img's te laten groeien maar hierdoor verdwijnt die text eronder. als ik dan de gap aanpas zorgt dit voor overlapping met de groep eronder. Ook groeit het heel lelijk dan.
 

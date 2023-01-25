@@ -1,0 +1,263 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+button,
+summary {
+	cursor: pointer;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	--color-text: #111;
+	--color-background: white;
+	--header-color:#692c09;
+	--color-lilac: #C8A2C8;
+	--nav-border: lightgray;
+	--header-text:#ffece1;
+	--footer-color:#f1eeeb;
+	--links:green;
+	--footer-text:grey;
+}
+
+@font-face {
+	font-family: "Karla-Regular";
+	src: url('../fonts/Karla-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Karla-Bold";
+	src: url('../fonts/Karla-Bold.ttf');
+}
+
+@font-face {
+	font-family: "GrouchBT";
+	src: url('../fonts/GrouchBT.ttf');
+}
+
+/* Keyframes */
+/* bruine moving tekst vanaf hier */
+@keyframes movingText {
+	0% {
+		transform: translateX(100%);
+	}
+	50% {
+		transform: translateX(-40%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+body {
+	overflow-x: hidden;
+	margin: 0;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 3em 6em;
+	overflow:hidden;
+}
+
+header > ul:nth-of-type(1) {
+	display: flex;
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+
+header ul li {
+	background-color: var(--header-color);
+	height:2em;
+}
+
+header ul li p {
+	width: 100%;
+	margin: 0;
+	color: var(--header-text);
+	font-size: 1em;
+	animation: movingText 8s;
+	animation-iteration-count: infinite;
+	word-spacing: .2em;
+	white-space: nowrap;
+	font-family: Karla-Regular;
+}
+
+/* Header logo, zoekbalk en winkelmandje */
+header > a img {
+	height: 80%;
+	width: auto;
+	/* object-fit: contain; */
+}
+
+header button {
+	background-color: var(--color-background);
+	border: none;
+	width: 2em;
+	margin-left: .3em;
+}
+
+header > button img {
+	width: 1em;
+}
+
+header div {
+	display: flex;
+	justify-content: end;
+	gap: 1em;
+	margin-right: 1em;
+}
+
+header div a {
+	display: flex;
+	align-items: center;
+}
+
+header > div a img {
+	height: 2em;
+}
+
+/* Hamburger menu */
+header > button {
+	background-color: var(--color-background);
+	width: 2em;
+	border: none;
+	font-size: 1.5em;
+	grid-row-start: 2;
+	grid-column-start: 1;
+}
+
+header nav {
+	width: 88%;
+	position: absolute; 
+	top: 9em;
+	left: 0;
+	bottom: 0;
+	background-color: var(--color-background);
+	z-index: 1000;
+	transform: translateX(-100%);
+	transition: .5s;
+	border-top: .1em solid var(--nav-border);
+}
+
+.menuOpen img {
+	content:url("/images/hamburger2.png");
+  }
+
+header nav.open {
+	transform: translateX(0%);
+}
+header nav ul {
+	padding: 4em 0em 1em 3em;
+}
+
+header nav ul:nth-of-type(1) li {
+	background-color: var(--color-background);
+	margin-top: 2em;	
+}
+
+header nav li a {
+	color:var(--color-text);
+	font-size: 1.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Karla-Regular;
+}
+
+@media (min-width:60em) {
+	header > button {
+		display: none;
+	}
+
+	header > a {
+		grid-column-start: 2;
+		margin-left: 5em;
+	}
+
+	header > div {
+		grid-column-start: 3;
+		margin-right: 5em;
+	}
+
+	nav {
+		position:static;
+		transform:none;
+		background-color: none;
+	}
+
+	header nav {
+		position:static;
+		transform: translateX(-3%);
+		grid-row-start: 3;
+		grid-column-start: 1;
+		grid-column-end: -1;
+		width: 100%;
+		text-align: center;
+		border: none;
+		padding-bottom: 1em;
+	}
+
+	header nav ul {
+		display: flex;
+		margin-left: 35vw;
+		align-items: center;
+		text-align: center;
+		padding: 0;
+	}
+
+	header nav ul li {
+		padding: 1em;
+	}
+
+	header nav ul li a {
+		font-size: 1.3em;
+	}
+}
+
+/* breadcrumbs */
+header ul:nth-of-type(2){
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-start: 1;
+	grid-column-end: span 3;
+    background-color: var(--color-lilac);
+    padding: 1em 2em 1em 6em;
+}
+
+header ul:nth-of-type(2) li{
+    background-color: var(--color-lilac);  
+    margin-right: 2em; 
+}
+
+header ul:nth-of-type(2) li a{
+    color: var(--color-text);
+    font-size: 1.5em;
+    white-space: nowrap;
+}
+
+header ul:nth-of-type(2) li:last-of-type a{
+    text-decoration: none;
+}
+
+
+
+
+/* main */

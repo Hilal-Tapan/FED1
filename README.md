@@ -175,21 +175,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  De screenreader lijkt het prima te doen. Het hamburger menu is openklapbaar met spatie en dan leest die de navigatie op. Het enige wat de screenreader niet pakt is de carousel. Die slaat die geheel over.
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Muis en toetsenbord is zichtbaar, alleen heb ik geen rekening gehouden met de styling van dit. Dus dit wil ik nog aanpassen. Het moet een witte border zijn. 
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Dit gaat helemaal goed. Ik heb hier eigenlijk niks aan toe te voegen.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 

@@ -36,17 +36,17 @@ summary {
 
 @font-face {
 	font-family: "Karla-Regular";
-	src: url(/fonts/Karla-Regular.ttf);
+	src: url('../fonts/Karla-Regular.ttf');
 }
 
 @font-face {
 	font-family: "Karla-Bold";
-	src: url(/fonts/Karla-Bold.ttf);
+	src: url('../fonts/Karla-Bold.ttf');
 }
 
 @font-face {
 	font-family: "GrouchBT";
-	src: url(/fonts/GrouchBT.ttf);
+	src: url('../fonts/GrouchBT.ttf');
 }
 
 /* Keyframes */
@@ -78,7 +78,7 @@ header {
 	overflow:hidden;
 }
 
-header > ul {
+header > ul:nth-of-type(1) {
 	display: flex;
 	grid-column-start: 1;
 	grid-column-end: -1;
@@ -86,14 +86,14 @@ header > ul {
 
 header ul li {
 	background-color: var(--header-color);
-	height:1.7em;
+	height:2em;
 }
 
 header ul li p {
 	width: 100%;
 	margin: 0;
 	color: var(--header-text);
-	font-size: .8em;
+	font-size: 1em;
 	animation: movingText 8s;
 	animation-iteration-count: infinite;
 	word-spacing: .2em;
@@ -171,15 +171,15 @@ header nav ul {
 
 header nav ul:nth-of-type(1) li {
 	background-color: var(--color-background);
-	margin-bottom: 1em;	
+	margin-top: 2em;	
 }
 
 header nav li a {
 	color:var(--color-text);
-	font-size: 1em;
+	font-size: 1.5em;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-family: Karla-Bold;
+	font-family: Karla-Regular;
 }
 
 @media (min-width:60em) {
@@ -205,13 +205,14 @@ header nav li a {
 
 	header nav {
 		position:static;
-		transform: translateX(0%);
+		transform: translateX(-3%);
 		grid-row-start: 3;
 		grid-column-start: 1;
 		grid-column-end: -1;
 		width: 100%;
 		text-align: center;
 		border: none;
+		padding-bottom: 1em;
 	}
 
 	header nav ul {
@@ -227,7 +228,7 @@ header nav li a {
 	}
 
 	header nav ul li a {
-		font-size: .9em;
+		font-size: 1.3em;
 	}
 }
 
@@ -266,7 +267,7 @@ main section:nth-of-type(1) a {
 	color: var(--color-background);
 	border: 0.15em solid var(--color-text);
 	border-radius: .5em;
-	padding: 0.4em 2em 0 2em;
+	padding: 0.4em 2em 0.4em 2em;
 	text-decoration: none;
 	font-family: Karla-Bold;
 }
@@ -384,8 +385,6 @@ main section:nth-of-type(2) a:hover {
  
  section:nth-of-type(3) ul {
 	 display: grid;
-	 /* grid-auto-rows: 45vw; */
-	 /* dit zorgt voor problemen, omdat het groeit overlapt het elkaar*/
 	 grid-template-columns: 1fr 1fr;
 	 gap: 1vw;
  }
@@ -507,6 +506,7 @@ section:nth-of-type(5) ul {
 	overflow-x: scroll;
 	scroll-snap-type: inline mandatory;
 	scroll-behavior: smooth;
+	gap: .5em;
 }
 
 section:nth-of-type(5) > ul::-webkit-scrollbar {
@@ -521,7 +521,9 @@ section:nth-of-type(5) img {
 
 section:nth-of-type(5) li {
 	scroll-snap-align:center;
-	margin-right: .5em;
+}
+
+section:nth-of-type(5) li a{
 	display: flex;
     flex-direction: column;
 }
@@ -536,15 +538,51 @@ section:nth-of-type(5) li h3 {
 	padding-top: .8em;
 }
 
+@media (min-width: 43em) {
+	section:nth-of-type(5) img {
+		width: 20em;
+		height: auto;
+		order:-100;
+	}
+}
+
+@media (min-width: 60em) {
+	section:nth-of-type(5) {
+		padding: 0 10% 0 10%;
+	}
+	section:nth-of-type(5) ul {
+		display: grid;
+	 	grid-template-columns: 1fr 1fr 1fr;
+		grid-auto-rows: max-content;
+	 	gap: 1vw;
+	}
+
+	section:nth-of-type(5) img {
+		width: 100%;
+		height: auto;
+		order:-100;
+	}
+
+	section:nth-of-type(5) ul li p {
+		display: none;
+	}
+}
+
+section:nth-of-type(5) li a {
+	text-decoration: none;
+	color: black;
+}
+
 section:nth-of-type(5) li p {
 	margin-top: 2em;
 	text-align: center;
 	font-family: Karla-Regular;
 	font-size: .8em;
 	letter-spacing: 1em;
+	text-decoration: none;
 }
 
-
+/* section 6 */
 section:nth-of-type(6) {
 	margin: 4em 1em 1em 1em;
 }
@@ -568,6 +606,7 @@ section:nth-of-type(6) a {
 }
 
 
+/* Footer */
 footer{
 	background-color:var(--footer-color);
 }
@@ -619,6 +658,10 @@ footer section:nth-of-type(1) ul li:nth-of-type(3) a {
 	font-size: .9em;
 }
 
+footer section:nth-of-type(1) ul li:nth-of-type(3) a:hover {
+	text-decoration: underline var(--color-text);
+}
+
 footer section:nth-of-type(1) li:nth-of-type(4) {
 	justify-content: center;
 	align-items: center;
@@ -647,6 +690,37 @@ footer section:nth-of-type(1) button {
 
 footer section:nth-of-type(1) button:hover {
 	opacity: 0.7;
+}
+
+@media (min-width: 55em) {
+	footer section:nth-of-type(1) ul {
+		display: grid;
+	 	grid-template-columns: 1fr 1fr 1fr 1fr;
+	 	gap: 1vw;
+	}
+
+	footer section:nth-of-type(1) li:nth-of-type(1) {
+		grid-column-start: 1;
+	}
+
+	footer section:nth-of-type(1) li:nth-of-type(2) {
+		grid-column-start: 2;
+
+	}
+
+	footer section:nth-of-type(1) li:nth-of-type(3) {
+		grid-column-start: 1;
+		/* margin: 0; */
+	}
+
+	footer section:nth-of-type(1) li:nth-of-type(4) {
+		grid-column-start: 3;
+		grid-column-end: -1;
+		grid-row-start: 1;
+		margin: 0;
+	}
+
+	
 }
 
 
@@ -682,6 +756,7 @@ footer section:nth-of-type(2) p {
 	font-size: .8em;
 	font-family: Karla-Regular;
 }
+
 
 
 

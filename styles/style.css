@@ -74,16 +74,18 @@ body {
 	cursor: url("../images/cursor-dolfijn.png") 2 2, auto;
 }
 
-
+/* cursors */
 a,
 button {
 	cursor: url("../images/cursor-normaal.png") 2 2, auto;
 }
 
-:focus {
+/* hierdoor is het alleen visible bij het tabben */
+:focus-visible {
 	outline: solid .2em var(--color-lilac);
 }
 
+/* header */
 header {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -148,7 +150,7 @@ header>div a img {
 	height: 2em;
 }
 
-/* Hamburger menu */
+/*  Hamburger menu (samen in de les gedaan met sanne tijdens tussenmeting) */
 header>button {
 	background-color: var(--color-background);
 	width: 2em;
@@ -295,7 +297,7 @@ main section:nth-of-type(2) {
 	background-color: var(--footer-color);
 	margin: 1em 1em 0 1em;
 	display: grid;
-	/* Reminder: niet meer zoveel rows aanmaken hilal */
+	/* Reminder: niet meer zoveel rows aanmaken, hoeft niet */
 	/* grid-template-rows: 37em 3em 7em 14em 4em; */
 }
 
@@ -374,8 +376,6 @@ main section:nth-of-type(2) a:hover {
 		padding-bottom: 2em;
 	}
 }
-
-
 
 @media (min-width:60em) {
 	main section:nth-of-type(2) h2 {
@@ -511,7 +511,6 @@ section:nth-of-type(4) button:hover {
 section:nth-of-type(5) {
 	margin-left: .8em;
 	margin-top: 3em;
-
 }
 
 section:nth-of-type(5) h2 {

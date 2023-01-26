@@ -236,19 +236,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Mijn leerdoel voor dit vak was leren werken met grid. Dit had ik nog nooit gedaan en omdat ik voor responsive ging leek me dit een goed moment om dit te leren. In heb begin had ik soms nog wat hulp nodig maar ik merkte dat ik het al gauw oppikte en het snapte. Het verder toepassen ervan op de rest ging erg goed en ik kan nu echt zeggen dat ik grid begrijp. Het is ontzettend handig voor mediaqueries dus ik ben blij dat ik voor deze weg koos.
 
-  <img src="readme-images/carousel-responsive-2.jpg" width="375px" alt="top">
+  De responsive carousel maken was eigenlijk hetgene waar ik het meest tegenop keek omdat voorheen mij carousels maken nooit lukte. Gek genoeg was het dit keer het makkelijkste van de hele site. Het ging ontzettend soepel en ook het responsive maken ervan ging top. Bij groot scherm is het geen carousel meer maar zoals op de afbeeldingen te zien. Ik heb er veel van geleerd.
+
+  <img src="readme-images/carousel-responsive-2.png" width="375px" alt="top">
+  <img src="readme-images/carousel-responsive.png" width="375px" alt="carousel">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/carousel-responsive-2.jpg" width="375px" alt="carousel">
+  Het gene wat me niet is gelukt is om het hamburger menu locked te krijgen soortvan. Je kan als het ware naar beneden scrollen terwijl het menu openstaat wat er heel lelijk uitziet. Ik had hiervoor nog hulp gevraagt aan Jeffrey maar die kon het ook niet oplossen. Toen had ik het gelaten tot het einde maar uiteindelijk door longontsteking ook niet meer aan toegekomen dus als ik extra tijd had gehad had ik dit nog willen oplossen.
+  <img src="readme-images/niet-gelukt.png" width="375px" alt="menu">
+  
+  Ook wou ik als ik niet ziek was geweest die img's van de productpagina veranderen met javascript als een soort extra oefening voor mezelf met javascript. Ik heb dit even geprobeert maar het is niet gelukt.
 </details>
-
-
-
 
 
 ## Bronnenlijst
@@ -258,8 +259,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. bron voor me carousel: https://codepen.io/shooft/pen/abmLRMg?editors=1100
+  2. Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
+  3. Grid: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+  4. flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  5. Beautify: https://www.youtube.com/watch?v=Po75958IOw8
+  6. Javascript change img onclick: https://www.youtube.com/watch?v=1j-XMwrLcg8&t=204s
 
 </details>

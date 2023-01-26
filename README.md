@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  Resonsive
+  Responsive
  
 </details>
 
@@ -38,13 +38,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Je opdracht:
   Shopatelje.com
 
-  #### Screenshot(s) van de eerste pagina (small screen): 
+  #### Screenshot(s) van de eerste en tweede pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/site-foto2.jpg" width="375px" alt="omschrijving van de pagina">
 
-  #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -62,7 +59,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Muis en Toetsenbord 
-  Alles werkte, ik vind het leuk dat ze een hoverstate hebben bij de tab.
+  Alles werkte, ik vind hun tabs echt super leuk en toegankelijk!
 
 
   #### Motoriek (shocks, elastiekjes)
@@ -247,7 +244,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Dit was lastig/Is niet gelukt:
   Het gene wat me niet is gelukt is om het hamburger menu locked te krijgen soortvan. Je kan als het ware naar beneden scrollen terwijl het menu openstaat wat er heel lelijk uitziet. Ik had hiervoor nog hulp gevraagt aan Jeffrey maar die kon het ook niet oplossen. Toen had ik het gelaten tot het einde maar uiteindelijk door longontsteking ook niet meer aan toegekomen dus als ik extra tijd had gehad had ik dit nog willen oplossen.
   <img src="readme-images/niet-gelukt.png" width="375px" alt="menu">
-  
+
   Ook wou ik als ik niet ziek was geweest die img's van de productpagina veranderen met javascript als een soort extra oefening voor mezelf met javascript. Ik heb dit even geprobeert maar het is niet gelukt.
 </details>
 
@@ -265,5 +262,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   4. flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   5. Beautify: https://www.youtube.com/watch?v=Po75958IOw8
   6. Javascript change img onclick: https://www.youtube.com/watch?v=1j-XMwrLcg8&t=204s
+  7. focus alleen visible bij tabben: https://stackoverflow.com/questions/31402576/enable-focus-only-on-keyboard-use-or-tab-press 
 
 </details>

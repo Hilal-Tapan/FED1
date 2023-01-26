@@ -186,14 +186,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Het enige wat apart was was de kleurenblindheids test. Deze leek het niet te doen op alleen mijn gebouwde site, verder wel op alle andere sites. Na lang knoeien kwamen we erachter dat het lag aan mijn chrome die niet geupdate was. Want toen Menno me site opende via github toen deed die het wel bij hem en niet bij mij. 
 
 </details>
-
-
-
 
 
 ## Voortgang 3 (week 4)
@@ -222,7 +217,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Wessel:
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
   Ik had me grid een beetje verkeerd gedaan oeps. Ik had overal de rows gedefinieerd en dit hoefde helemaal niet. Ik ben er nu achter dat het veel makkelijker is zonder. Dus heb veel geleerd vandaag bij de tussenmeting. Me nav is eindelijk ook responsive en was een makkelijkere manier voor. Ik ben blij want vrijwel al me vragen zijn beantwoord :)
 
 </details>

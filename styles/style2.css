@@ -70,6 +70,15 @@ summary {
 body {
 	overflow-x: hidden;
 	margin: 0;
+	cursor:url("../images/cursor-dolfijn.png") 2 2, auto;
+}
+
+a, button{
+	cursor:url("../images/cursor-normaal.png") 2 2, auto;
+}
+
+:focus{
+	outline:solid .2em var(	--color-lilac);
 }
 
 header {
@@ -231,9 +240,16 @@ header nav li a {
 	header nav ul li a {
 		font-size: 1.3em;
 	}
+	header nav ul li a:hover {
+		text-decoration: underline var(--color-text);
+	}
 }
 
 /* breadcrumbs */
+
+header ul:nth-of-type(2) a:focus{
+	outline:solid .2em var(--footer-color);
+}
 header ul:nth-of-type(2){
     display: flex;
     flex-wrap: wrap;
@@ -254,6 +270,7 @@ header ul:nth-of-type(2) li a{
     white-space: nowrap;
 	font-family: karla-bold;
 	text-transform: uppercase;
+	
 }
 
 header ul:nth-of-type(2) li:last-of-type a{
@@ -269,8 +286,7 @@ header ul:nth-of-type(2) li:last-of-type a:hover{
 		padding: .2em 2em .2em 2em;
 	}
 	header ul:nth-of-type(2) li a{
-		font-size: .9em;
-		
+		font-size: .9em;	
 	}
 }
 
@@ -328,16 +344,14 @@ main section:nth-of-type(1) ul button {
 	}
 
 	main section:nth-of-type(1) ul button img{
-		width: 10vw;
+		width: 12vw;
 		height: auto;
 		padding: 0;
 
 	}
 	main section:nth-of-type(1) ul button{
-		width: 10vw;
-
-	}
-	
+		width: 12vw;
+	}	
 }
 
 /* section 2  */
@@ -437,6 +451,10 @@ main section:nth-of-type(2) button:nth-of-type(4):hover{
 	background-color: var(--color-lilac);
 	opacity: 90%;
 	transition: .1s;
+}
+
+main section:nth-of-type(2) button:nth-of-type(4):focus{
+	outline:solid .2em var(--color-text);
 }
 
 main section:nth-of-type(2) a:nth-of-type(1) {

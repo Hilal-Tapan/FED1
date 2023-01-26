@@ -175,7 +175,7 @@ header nav {
 }
 
 .menuOpen img {
-	content: url("/images/hamburger2.png");
+	content: url("../images/hamburger2.png");
 }
 
 header nav.open {

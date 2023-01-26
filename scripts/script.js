@@ -10,6 +10,6 @@ deSluitButton.addEventListener("click", toggleMenu);
 
 // functie om hamburger te openen en img te veranderen
 function toggleMenu() {
-	deNav.classList.toggle("open");
+    deNav.classList.toggle("open");
     deMenuButton.classList.toggle("menuOpen");
 }
